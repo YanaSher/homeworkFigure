@@ -16,8 +16,8 @@ class Figure:
         return self._perimetr
 
     def add_area(self, other_figure):
-       if isinstance(other_figure,Figure):
-           sum_areas = self._area + other_figure._area
-           return sum_areas
-       else:
-           raise ValueError("Неправильная фигура")
+        if isinstance(other_figure, Figure):
+            sum_areas = self._area + other_figure._area
+            return sum_areas
+        else:
+            raise ValueError("Неправильная фигура")

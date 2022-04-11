@@ -24,3 +24,8 @@ def triangle():
 @pytest.fixture()
 def circle():
     return Circle(5)
+
+
+@pytest.fixture()
+def string():
+    return 5

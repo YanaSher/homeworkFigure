@@ -26,3 +26,12 @@ def test_area(rectangle):
 
 def test_perimetr(rectangle):
     assert Rectangle.get_perimetr(rectangle) == 22
+
+
+def test_area_rectangle_and_area_square(rectangle, square):
+    assert rectangle.add_area(square) == 55
+
+
+def test_eror_sum_area(rectangle, string):
+    with pytest.raises(ValueError):  # проверяем, что если фигура не определяется, то ошибка
+        assert rectangle.add_area(string) == 103.54

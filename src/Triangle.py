@@ -12,7 +12,9 @@ class Triangle(Figure):
         self._side_c = side_c
         #   self._polyperimetr = round((self._side_a + self._side_b + self._side_c) / 2, 2)
         self._name = 'Triangle'
-        self._area = round((self.polp * ((self.polp - self._side_a) * (self.polp - self._side_b) * (self.polp - self._side_c))) ** 0.5, 2)
+        self._area = round(
+            (self.polp * ((self.polp - self._side_a) * (self.polp - self._side_b) * (self.polp - self._side_c))) ** 0.5,
+            2)
         self._perimetr = round(self._side_a + self._side_b + self._side_c, 2)
 
     @property

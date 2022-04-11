@@ -39,3 +39,12 @@ def test_area(triangle):
 
 def test_perimetr(triangle):
     assert Triangle.get_perimetr(triangle) == 18
+
+
+def test_area_triangle_and_area_rectangle(triangle, rectangle):
+    assert triangle.add_area(rectangle) == 41.62
+
+
+def test_eror_sum_area(triangle, string):
+    with pytest.raises(ValueError):  # проверяем, что если фигура не определяется, то ошибка
+        assert triangle.add_area(string) == 103.54
